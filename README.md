@@ -62,7 +62,7 @@ Each CI/CD pipeline will be unique but the main steps in creating this pipeline 
       - The status check setting requires a specified status check to run in order to verify the pull request still passes the tests.
       - If using the standard integration format for your .yml file you can just specify ```integration``` here
       - Now the CI only allows merging if the code is both automatically mergeable and the tests have passed.
-4. For the CD part of this pipeline we decided to use AWS to deploy our production code but there are a number of other otpions out there for continuous deployment
+4. For the CD part of this pipeline we decided to use AWS to deploy our production code but there are a number of other options out there for continuous deployment
 - For AWS in particular we had to configure our AWS cli with credentials from our AWS account before being able to launch instances from our workflow file
 - Visit this page for information on how to configure the AWS CLI - [AWS CLI SETUP](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
   - You will need to create an ```ACCESS_KEY_ID``` and ```SECRET_ACCESS_KEY``` to configure the aws cli this is done by going to the **IAM>USERS>SECURITY CREDENTIALS>CREATE ACCESS KEY** here you will be able to create these two credentials.
